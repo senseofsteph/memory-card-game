@@ -6,6 +6,7 @@ def create_cards(num_cards):
   """Generate fake word and color for cards"""
 
   cards = []
+  
   for i in range(num_cards):
     color = fake.safe_color_name()
     while color == 'white': # checking the color of the text
