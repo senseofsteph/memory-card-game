@@ -1,7 +1,9 @@
 function App() {
     return(
     <React.Fragment>
-        <h2>Welcome to Memory Game</h2>
+        <Header />
+        <h2>Hello Player!
+        </h2>
         <Footer />
     </React.Fragment>
     )
