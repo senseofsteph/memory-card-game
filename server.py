@@ -1,7 +1,7 @@
 """Server route for single page react memory game"""
 
 
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -9,7 +9,7 @@ app = Flask(__name__)
 def homepage():
   """Render app."""
 
-  return('Hi')
+  return render_template('App.html')
 
 
 if __name__ == '__main__':
