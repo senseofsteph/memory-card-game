@@ -2,8 +2,7 @@ function App() {
     return(
     <React.Fragment>
         <Header />
-        <h2>Hello Player!
-        </h2>
+        <Main />
         <Footer />
     </React.Fragment>
     )

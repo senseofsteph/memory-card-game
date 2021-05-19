@@ -1,7 +1,7 @@
 """Server route for single page react memory game"""
 
 
-from flask import Flask, render_template, jsonify
+from flask import (Flask, render_template, jsonify)
 from helpers import create_cards
 
 app = Flask(__name__)
