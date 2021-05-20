@@ -1,7 +1,7 @@
-function Card() {
+function Card(props) {
   return(
     <div>
-      Word
+      {props.word}
     </div>
   );
 }
