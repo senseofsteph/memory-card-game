@@ -1,7 +1,7 @@
-function Card(props) {
+function Card({word, color, id}) {
   return(
-    <div>
-      {props.word}
+    <div className='card' id={id} style={{color: color}}>
+      {word}
     </div>
-  );
+  )
 }

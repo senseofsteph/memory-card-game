@@ -1,22 +1,28 @@
 function PlayArea() {
-  let cards = [];
-  let tempData = {};
+  const [cardData, updateCardData] = React.useState([]);
+  const [cardsInPlay, updateCardsInPlay] = React.useState([]);
+  
 
-  fetch("/cards")
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-    tempData = data[0];
-    console.log(tempData.word);
-    // cards.push(<Card color=data.color word=data.word />)
-    
-  })
+  React.useEffect( () => {
+    fetch("/cards")
+    .then(res => res.json())
+    .then(data => updateCardData(data))
+  }, [])
 
+
+  // updateCardsInPlay(cardData.slice(0,16));
+ 
   return(
-    <React.Fragment>
-      {/* <Card id={tempData.id} color={tempData.color} word={tempData.word} /> */}
-      <Card id='0a' color='blue' word= 'hackbright' />
+    <div id='play-area'>
+      {cardData.map(card => {
+        <Card 
+          key={card.id}
+          color={card.color}
+          word={card.word}
+        />
+      })}
+      <Card id='0a' color='green' word= 'hackbright' />
       <Card id='0b' color='blue' word='student' />
-    </React.Fragment>
+    </div>
   );
 }

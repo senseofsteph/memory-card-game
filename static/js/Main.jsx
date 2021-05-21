@@ -1,9 +1,21 @@
 function Main() {
-  return(
+  const [playing, updatePlaying] = React.useState(false);
+
+  function initialDeal(){
+    updatePlaying(true);
+  }
+
+  if (playing) {
+    return(
     <React.Fragment>
-      <button>Deal</button>
       <PlayArea />
     </React.Fragment>
-    
-  );
+    )
+  } else {
+    return(
+      <React.Fragment>
+        <button onClick={initialDeal}>Deal</button>
+      </React.Fragment>  
+    );
+  }
 }
