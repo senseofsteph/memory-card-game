@@ -1,4 +1,8 @@
 function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay}) {
+
+  function selectCard(){
+    
+  }
   
   return(
     <div id='play-area'>
@@ -8,6 +12,7 @@ function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay}) {
           key={card.id}
           color={card.color}
           word={card.word}
+          onClick={}
         />)
     })}
     </div>
