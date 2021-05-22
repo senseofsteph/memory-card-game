@@ -1,8 +1,8 @@
-## Memory Game
+## React Memory Game
 
 #### Overview
 
-A single page react web app for users, to play a fun memory card game!
+A web app for users to play a fun memory card game!
 
 ## MVP Features
 
