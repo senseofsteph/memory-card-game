@@ -1,8 +1,8 @@
 function Footer() {
   return(
     <p>
-      Crafted with extra love and care  
-    </p>
+      2021 Hackbright Academy | Stephanie Ogamba | Created with extra love and care
+    </p> 
   )
 }
 
