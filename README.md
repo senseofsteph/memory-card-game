@@ -1,19 +1,19 @@
 ## React Memory Game
 
-#### Overview
+### Overview
 
-A web app for users to play a fun memory card game!
+A React single-page web app, for users to play a fun memory card game!
 
-## MVP Features
+### MVP Features
 
 - Preview of card's word when first dealt
 - Card flips over when clicked
 - A matched pair of cards are removed and replaced, until no cards are left in deck.
 
-## Future Features
+### Future Features
 
 - Add score for the amount of clicks to complete the game
-- Two player more to alternate awarding points
+- Two player mode to alternate awarding points
 - Redeal when the game ends - WIP
 
 #### Set-up & Installation
