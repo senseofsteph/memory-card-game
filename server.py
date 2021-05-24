@@ -3,6 +3,7 @@
 
 from flask import (Flask, render_template, jsonify)
 from helpers import create_cards
+from random import shuffle
 
 app = Flask(__name__)
 
@@ -18,6 +19,7 @@ def generate_cards():
     """Return JSON of new cards for memory game."""
 
     cards = create_cards(20)
+    shuffle(cards)
 
     return jsonify(cards)
 
