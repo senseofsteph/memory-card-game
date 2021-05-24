@@ -32,7 +32,9 @@ function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay}) {
       if (pairOfCards.includes(card)) {
         if (newCards.length > 0) {
           replacementCards.push(newCards.pop())
-        } 
+        } else {
+          replacementCards.push(null);
+        }
       } else {
         replacementCards.push(card)
       }
@@ -47,13 +49,16 @@ function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay}) {
     <div id='play-area'>
       {cardsInPlay.map(card => {
         return(
-        <Card 
+        card ? <Card 
           key={card.id}
           color={card.color}
           word={card.word}
           isSelected={selectedCards.includes(card)}
           onClick={selectedCards.includes(card) ? null : () => selectCard(card)}
-        />)
+        /> : <div 
+          className='card'
+          />
+        )
     })}
     </div>
   );
