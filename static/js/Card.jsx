@@ -1,11 +1,11 @@
-function Card({word, color, id, onClick}) {
+function Card({word, color, id, onClick, isSelected}) {
   return(
     <div className='card' 
     id={id} 
     style={{color: color}}
     onClick={onClick}
     >
-      {word}
+      {isSelected ? word : ""}
     </div>
   )
 }

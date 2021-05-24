@@ -14,7 +14,7 @@ function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay}) {
         
         if(selected[0].word == selected[1].word)
           console.log('Found match', selected[0].word)
-          removeValidPair(selected);
+          setTimeout(() => removeValidPair(selected), 1000);
         } else {
           setTimeout(() => updateSelectedCards([]), 1000);
         } 
@@ -25,17 +25,21 @@ function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay}) {
     const replacementCards = [];
     const numNewCards = 16 - cardsInPlay.length + 2
     const newCards = deck.slice(deck.length - numNewCards);
+    // deck.length = 60 -> slice from 58 to end of deck
 
-    for (const card of cardsInPlay){
+    for (const card of cardsInPlay) {
       if (pairOfCards.includes(card)) {
-        replacementCards.push(newCards.pop())
+        if (newCards.length > 0) {
+          replacementCards.push(newCards.pop())
+        } 
       } else {
         replacementCards.push(card)
       }
     }
     updateDeck(deck.slice(0, deck.length - numNewCards))
     updateCardsInPlay(replacementCards);
-    setTimeout(() => updateSelectedCards([]), 1000);
+    updateSelectedCards([]);
+    // setTimeout(() => updateSelectedCards([]), 1000);
   }
   
   return(
@@ -46,7 +50,8 @@ function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay}) {
           key={card.id}
           color={card.color}
           word={card.word}
-          onClick={() => selectCard(card)}
+          isSelected={selectedCards.includes(card)}
+          onClick={selectedCards.includes(card) ? null : () => selectCard(card)}
         />)
     })}
     </div>
