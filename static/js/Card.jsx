@@ -6,7 +6,7 @@ function Card({word, color, id, onClick, isSelected}) {
   }, [])
 
   return(
-    <div className='card' 
+    <div className= {`card ${ isSelected || isNew ? "selected" : "card-back"}`}
     id={id} 
     style={{color: color}}
     onClick={onClick}
