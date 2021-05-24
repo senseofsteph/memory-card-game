@@ -10,4 +10,47 @@ A web app for users to play a fun memory card game!
 - Card flips over when clicked
 - A matched pair of cards are removed and replaced, until no cards are left in deck.
 
-## Nice-to-have Features
+## Future Features
+
+- Add score for the amount of clicks to complete the game
+- Two player more to alternate awarding points
+- Redeal when the game ends - WIP
+
+#### Set-up & Installation
+
+Install a code editor such as [VS code](https://code.visualstudio.com/download) or [Sublime Text](https://www.sublimetext.com/)<br>
+Install [Python3](https://www.python.org/downloads/mac-osx/)<br>
+Install [pip](https://pip.pypa.io/en/stable/installing/), the package installer for Python <br>
+
+
+#### Clone or fork this repository
+
+- Create and activate a virtual environment:
+```shell
+git clone https://github.com/senseofsteph/memory_game
+```
+
+- Install dependencies:
+```shell
+pip3 install virtualenv
+virtualenv env
+source env/bin/activate
+pip3 install -r requirements.txt
+```
+
+- Run the app from the command line:
+```shell
+python3 server.py
+```
+
+- Open local host to view app
+```shell
+Running on http://0.0.0.0:5000/ 
+```
+
+- Lastly, have fun playing!
+
+#### Connect with the developer
+
+- [Github](https://github.com/senseofsteph)
+- [LinkedIn](https://www.linkedin.com/in/senseofsteph/)
