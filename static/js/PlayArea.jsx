@@ -1,4 +1,4 @@
-function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay}) {
+function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay,playing, updatePlaying}) {
 
   const [selectedCards, updateSelectedCards] = React.useState([]); 
 
@@ -6,6 +6,7 @@ function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay}) {
     let setOfCards = new Set(cardsInPlay);
     if (setOfCards.size == 1 && setOfCards.has(null)) {
       alert("WE HAVE A WINNER!!!");
+      updatePlaying(false);
     }
   }, [cardsInPlay])
 
@@ -19,7 +20,7 @@ function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay}) {
       console.log('selectedCards', selectedCards)
 
       if (selected.length == 2){
-        
+        // check card.word matches a previous selection
         if(selected[0].word == selected[1].word)
           console.log('Found match', selected[0].word)
           setTimeout(() => removeValidPair(selected), 1000);
