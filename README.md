@@ -4,7 +4,7 @@
 
 A React single-page web app, for users to play a fun memory card game!
 
-<img src=static/img/ScreenShot2021-05-24at7.38.23PM.png width="400">
+<img src=https://github.com/senseofsteph/memory_game/blob/master/static/img/screen_shot.png width="400">
 
 ### MVP Features
 
