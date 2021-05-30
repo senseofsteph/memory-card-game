@@ -9,7 +9,7 @@ def create_cards(num_cards):
   
   for i in range(num_cards):
     color = fake.safe_color_name()
-    while color == 'white': # checking the color of the text
+    while color == 'white' or color == 'yellow': # checking the color of the card text
       color = fake.safe_color_name()
     word = fake.unique.word()
     cards.extend([{'id': str(i) + 'a', # creating pairs of cards
