@@ -16,12 +16,6 @@ function Main() {
   }
 
 
-  // let tableCardsSet = new Set(cardsInPlay);
-  // let tableCount = tableCardsSet.size;
-  // if (tableCardsSet.has(null)) {
-  //   tableCount --;
-  // }
-
   let nullCount = 0;
   for(const card of cardsInPlay) {
     if(card == null) {
@@ -48,7 +42,9 @@ function Main() {
   } else {
     return(
       <React.Fragment>
-        <button onClick={initialDeal}>Deal</button>
+        <div class='button-container'>
+          <button onClick={initialDeal}>Deal</button>
+        </div>
       </React.Fragment>  
     );
   }
