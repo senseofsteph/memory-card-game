@@ -38,10 +38,37 @@
   flex-wrap: wrap;
 }
 
-/* h1 {
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 100px;
+  padding: 5px;
+}
+
+.info {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 100%;
   text-align: center;
 }
 
-p {
+h1 {
   text-align: center;
-} */
+  margin-top: 20px;
+}
+
+
+
