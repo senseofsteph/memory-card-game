@@ -2,7 +2,7 @@
 
 ### Overview
 
-A React single-page web app, for users to play a fun memory card game!
+A virtual memory card game implementing React components!
 
 <img src=https://github.com/senseofsteph/memory_game/blob/master/static/img/screen_shot.png width="400">
 
@@ -17,6 +17,7 @@ A React single-page web app, for users to play a fun memory card game!
 - Add score for the amount of clicks to complete the game
 - Two player mode to alternate awarding points
 - Redeal when the game ends - WIP
+- Software deployment
 
 #### Set-up & Installation
 
