@@ -7,6 +7,7 @@ from random import shuffle
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def homepage():
   """Render app."""
@@ -22,6 +23,8 @@ def generate_cards():
     shuffle(cards)
 
     return jsonify(cards)
+
+
 
 
 if __name__ == '__main__':
