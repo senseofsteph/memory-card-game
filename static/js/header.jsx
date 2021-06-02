@@ -1,7 +1,10 @@
+//** Functionality to display heading on landing page */ 
+
+
 function Header() {
   return(
-    <h1>
-      Welcome to the React Memory Game
-    </h1>
-  )
+    <h2>
+      ~~ Welcome to the React Memory Game ~~
+    </h2>
+  );
 }

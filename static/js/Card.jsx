@@ -1,3 +1,6 @@
+//** Functionality to display the card word and color after click */
+
+
 function Card({word, color, id, onClick, isSelected}) {
   const [isNew, updateIsNew] = React.useState(true);
 

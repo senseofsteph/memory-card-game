@@ -1,3 +1,6 @@
+//** Functionality to start deal and display table cards */ 
+
+
 function Main() {
   const [playing, updatePlaying] = React.useState(false);
   const [deck, updateDeck] = React.useState([]);
@@ -27,8 +30,10 @@ function Main() {
   if (playing) {
     return(
     <React.Fragment>
-      <p id="deck-count">{deck.length} Cards in Deck</p>
-      <p id="table-count">{cardsInPlay.length - nullCount} Cards on Table</p>
+      <div class="scoring">
+        <span class="count">{deck.length}</span> Cards in Deck |{" "} 
+        <span class="count">{cardsInPlay.length - nullCount}</span> Cards on Table
+      </div>
       <PlayArea 
         deck={deck} 
         updateDeck={updateDeck} 

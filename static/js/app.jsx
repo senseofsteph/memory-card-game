@@ -1,3 +1,5 @@
+//** Functionality to display the app game */ 
+
 function App() {
     return(
     <React.Fragment>
