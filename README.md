@@ -4,7 +4,7 @@
 
 A virtual memory card game implementing React components!
 
-<img src=https://github.com/senseofsteph/memory_game/blob/master/static/img/screen_shot.png width="400">
+<!-- <img src=https://github.com/senseofsteph/memory_game/blob/master/static/img/screen_shot.png width="400"> -->
 
 ### MVP Features
 
