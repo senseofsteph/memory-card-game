@@ -12,6 +12,7 @@
   background-color: white;
 }
 
+
 .card-back {
   background-image: url('../img/crossline-dots.png');
 }
@@ -23,20 +24,33 @@
   -1px -1px 30px rgba(0,0,0,0.2);
 }
 
+
 #play-area {
   /* bg-image source: 
   https://www.toptal.com/designers/subtlepatterns/crossline-dots-pattern/
   made by Aleksey Nikolaev */
   background-image: url('../img/retina_wood.png');
-  max-width: 900px;
-  margin: 30px auto;
+  max-width: 850px;
+  margin: 20px auto;
   padding: 2em 2em;
   display: flex;
   flex-flow: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  border: 5px solid rgb(97, 97, 97);
 }
+
+
+.scoring {
+  text-align: center;
+}
+
+
+.count {
+  font-weight: bold;
+}
+
 
 .button-container {
   display: flex;
@@ -44,15 +58,18 @@
   align-items: center;
 }
 
+
 button {
   width: 100px;
   padding: 5px;
 }
 
+
 .info {
   margin-right: 1em;
   margin-left: 1em;
 }
+
 
 .footer {
   position: fixed;
@@ -65,7 +82,8 @@ button {
   text-align: center;
 }
 
-h1 {
+
+h2 {
   text-align: center;
   margin-top: 20px;
 }
