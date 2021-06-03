@@ -1,4 +1,6 @@
-//** Functionality to display table cards and to remove matching pairs */ 
+/** 
+ * Functionality to display table cards and to remove matching pairs 
+ */ 
 
 
 function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay,playing, updatePlaying}) {

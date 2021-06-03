@@ -1,4 +1,6 @@
-//** Functionality to display the app game */ 
+/** 
+ * Functionality to display the app game 
+ */ 
 
 function App() {
     return(

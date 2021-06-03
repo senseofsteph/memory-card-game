@@ -1,4 +1,6 @@
-//** Functionality to display footer on landing page */ 
+/** 
+ * Functionality to display footer on landing page 
+ */ 
 
 function Footer() {
   return(

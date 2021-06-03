@@ -1,4 +1,6 @@
-//** Functionality to display heading on landing page */ 
+/** 
+ * Functionality to display heading on landing page 
+ */ 
 
 
 function Header() {
