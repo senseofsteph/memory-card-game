@@ -4,7 +4,7 @@
 
 A virtual memory card game implementing React components!
 
-<!-- <img src=https://github.com/senseofsteph/memory_game/blob/master/static/img/screen_shot.png width="400"> -->
+<img src=https://github.com/senseofsteph/memory_game/blob/master/static/img/playarea_screenshot.png width="400">
 
 ### MVP Features
 
@@ -16,7 +16,7 @@ A virtual memory card game implementing React components!
 
 - Add score for the amount of clicks to complete the game
 - Two player mode to alternate awarding points
-- Redeal when the game ends - WIP
+- Redeal when the game ends (for now, hard reload to restart game)
 - Software deployment
 
 #### Set-up & Installation
