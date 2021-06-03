@@ -17,15 +17,17 @@ def homepage():
 
 @app.route("/cards")
 def generate_cards():
-    """Return JSON of new cards for memory game."""
+  """Return JSON of new cards for memory game."""
 
-    cards = create_cards(20)
-    shuffle(cards)
+  cards = create_cards(20)
+  shuffle(cards)
 
-    return jsonify(cards)
+  return jsonify(cards)
 
 
+#**** ------------------------------- ****#
 
+#**** ------------------------------- ****#
 
 if __name__ == '__main__':
   app.run(debug='True', host='0.0.0.0', port='5000') 
