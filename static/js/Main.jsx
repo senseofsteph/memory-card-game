@@ -1,4 +1,6 @@
-//** Functionality to start deal and display table cards */ 
+/** 
+ * Functionality to start deal, display table cards, and playing the game 
+ */ 
 
 
 function Main() {
@@ -21,7 +23,7 @@ function Main() {
 
   let nullCount = 0;
   for(const card of cardsInPlay) {
-    if(card == null) {
+    if(card === null) {
       nullCount++;
     }
   }
@@ -31,7 +33,7 @@ function Main() {
     return(
     <React.Fragment>
       <div class="scoring">
-        <span class="count">{deck.length}</span> Cards in Deck |{" "} 
+        <span class="count">{deck.length}</span> Cards left in Deck |{" "} 
         <span class="count">{cardsInPlay.length - nullCount}</span> Cards on Table
       </div>
       <PlayArea 

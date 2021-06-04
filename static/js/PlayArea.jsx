@@ -9,8 +9,8 @@ function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay,playing, upd
 
   React.useEffect(() => {
     let setOfCards = new Set(cardsInPlay);
-    if (setOfCards.size == 1 && setOfCards.has(null)) {
-      alert("WE HAVE A WINNER!!!");
+    if (setOfCards.size === 1 && setOfCards.has(null)) {
+      alert("WE HAVE A WINNER!!! 🏆");
       updatePlaying(false);
     }
   }, [cardsInPlay])
@@ -24,10 +24,10 @@ function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay,playing, upd
 
       console.log('selectedCards', selectedCards)
 
-      if (selected.length == 2){
+      if (selected.length === 2){
         // check card.word matches a previous selection
-        if(selected[0].word == selected[1].word)
-          console.log('Found match', selected[0].word)
+        if(selected[0].word === selected[1].word)
+          console.log('Found a match', selected[0].word)
           setTimeout(() => removeValidPair(selected), 1000);
         } else {
           setTimeout(() => updateSelectedCards([]), 1000);

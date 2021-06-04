@@ -16,7 +16,7 @@ function Card({word, color, id, onClick, isSelected}) {
     style={{color: color}}
     onClick={onClick}
     >
-      {isSelected || isNew ? word : ""}
+      { isSelected || isNew ? word : "" }
     </div>
   )
 }

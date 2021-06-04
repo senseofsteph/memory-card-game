@@ -8,5 +8,5 @@ function Header() {
     <h2>
       ~~ Welcome to the React Memory Game ~~
     </h2>
-  );
+  )
 }
