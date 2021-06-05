@@ -16,7 +16,7 @@ function Main() {
 
   function initialDeal(){
     updatePlaying(true);
-    updateCardsInPlay(deck.slice(0,16));
+    updateCardsInPlay(deck.slice(0, 16));
     updateDeck(deck.slice(16, deck.length));
   }
 
@@ -30,29 +30,29 @@ function Main() {
 
 
   if (playing) {
-    return(
-    <React.Fragment>
-      <div class="scoring">
-        <span class="count">{deck.length}</span> Cards left in Deck |{" "} 
-        <span class="count">{cardsInPlay.length - nullCount}</span> Cards on Table
-      </div>
-      <PlayArea 
-        deck={deck} 
-        updateDeck={updateDeck} 
-        cardsInPlay={cardsInPlay} 
-        updateCardsInPlay={updateCardsInPlay} 
-        playing={playing}
-        updatePlaying={updatePlaying}
-      />
-    </React.Fragment>
-    )
-  } else {
-    return(
+      return(
       <React.Fragment>
-        <div class='button-container'>
-          <button onClick={initialDeal}>Deal</button>
+        <div class="scoring">
+          <span class="count">{deck.length}</span> Cards left in Deck |{" "} 
+          <span class="count">{cardsInPlay.length - nullCount}</span> Cards on Table
         </div>
-      </React.Fragment>  
-    );
+        <PlayArea 
+          deck={deck} 
+          updateDeck={updateDeck} 
+          cardsInPlay={cardsInPlay} 
+          updateCardsInPlay={updateCardsInPlay} 
+          playing={playing}
+          updatePlaying={updatePlaying}
+        />
+      </React.Fragment>
+      )
+  } else {
+      return(
+        <React.Fragment>
+          <div class='button-container'>
+            <button onClick={initialDeal}>Deal</button>
+          </div>
+        </React.Fragment>  
+      );
   }
 }
