@@ -20,7 +20,7 @@ def generate_cards():
   """Return JSON of new cards for memory game."""
 
   cards = create_cards(20)
-  # shuffle(cards)
+  shuffle(cards)
 
   return jsonify(cards)
 
