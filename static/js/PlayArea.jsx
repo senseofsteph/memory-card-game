@@ -3,7 +3,7 @@
  */ 
 
 
-function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay,playing, updatePlaying}) {
+function PlayArea({deck, updateDeck, cardsInPlay, updateCardsInPlay, playing, updatePlaying}) {
 
   const [selectedCards, updateSelectedCards] = React.useState([]); 
 
