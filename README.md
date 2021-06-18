@@ -4,7 +4,7 @@
 
 A virtual memory card game implementing React components!
 
-<img src=https://github.com/senseofsteph/memory-card-game/blob/master/static/img/memory_game_gif.gif width="500">
+<img src="https://github.com/senseofsteph/memory-card-game/blob/master/static/img/memory_game_gif.gif" width="500">
 
 ### MVP Features
 
@@ -48,7 +48,7 @@ Running on http://0.0.0.0:5000/
 ```
 - Lastly, have fun playing!
 
-#### Connect with the developer
+### Connect with the developer
 
 - [Github](https://github.com/senseofsteph)
 - [LinkedIn](https://www.linkedin.com/in/senseofsteph/)
