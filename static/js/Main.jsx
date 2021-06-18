@@ -20,14 +20,12 @@ function Main() {
     updateDeck(deck.slice(16, deck.length));
   }
 
-
   let nullCount = 0;
   for(const card of cardsInPlay) {
     if(card === null) {
       nullCount++;
     }
   }
-
 
   if (playing) {
       return(
