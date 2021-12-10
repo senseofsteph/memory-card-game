@@ -51,4 +51,4 @@ Running on http://0.0.0.0:5000/
 ### Connect with the developer
 
 - [Github](https://github.com/senseofsteph)
-- [LinkedIn](https://www.linkedin.com/in/senseofsteph/)
+- [LinkedIn](https://www.linkedin.com/in/stephanieogamba)
