@@ -1,8 +1,8 @@
-## React Memory Card Game
+## Memory Card Game
 
 ### Overview
 
-A virtual memory card game implementing React components!
+A virtual memory card game implementing React components
 
 <img src="https://github.com/senseofsteph/memory-card-game/blob/master/static/img/memory_game_gif.gif" width="500">
 
@@ -14,7 +14,7 @@ A virtual memory card game implementing React components!
 
 ### Future Features
 
-- Add score for the amount of clicks to complete the game
+- Add score count for the amount of clicks left in the game
 - Redeal when the game ends (for now, hard reload to restart game)
 - Two player mode to alternate awarding points
 - Software deployment
